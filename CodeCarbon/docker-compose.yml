@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  codecarbon-runner:
+    build: .
+    volumes:
+      - ./results:/app/results
+    environment:
+      - CODECARBON_OUTPUT_DIR=/app/results

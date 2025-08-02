@@ -1,0 +1,7 @@
+codecarbon
+pandas
+numpy
+scikit-learn
+beautifulsoup4
+pillow
+requests

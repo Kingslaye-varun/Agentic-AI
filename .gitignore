@@ -1,3 +1,6 @@
 /client/node_modules
 /server/node_modules
 .env
+CodeCarbon/backend/node_modules/.bin/browserslist
+/CodeCarbon/backend/node_modules
+/CodeCarbon/frontend/node_modules
