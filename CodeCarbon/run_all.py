@@ -22,7 +22,7 @@ if __name__ == "__main__":
         for program in programs:
             print(f"\nRunning {program}...")
             start_time = time.time()
-            subprocess.run(["python", program], check=True)
+            subprocess.run(["python", f"programs/{program}"], check=True)
             duration = time.time() - start_time
             print(f"Completed {program} in {duration:.2f} seconds")
     finally:

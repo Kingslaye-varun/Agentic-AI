@@ -13,7 +13,11 @@ RUN apt-get update && apt-get install -y \
 # Copy requirements first to leverage Docker cache
 COPY requirements.txt .
 
-# Install Python dependencies
+# Create and use a virtual environment
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Install Python dependencies in the virtual environment
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
